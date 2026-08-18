@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Styling a form</h1>
+    <form action="website.com/backend">
+        <label for="fullname"> Enter your Full Name: </label>
+        <input name="fullName" id="fullname" placeholder="eg: ShahRukh Khan" type="text" />
+<br>
+        <br />
+
+        <label for="email">Enter your email: </label>
+        <input type="email" name="email" id="email" placeholder="eg: abc@gmail.com" />
+<br>
+        <br />
+
+        <label for="DOB">Enter your DOB: </label>
+        <input type="date" name="DOB" id="DOB" placeholder="eg: 13/4/2000" />
+<br>
+        <br />
+
+        <label for="password">Enter your password: </label>
+        <input type="password" name="password" id="password" placeholder="Enter your password" />
+
+        <br />
+
+        <p>Skills you have:</p>
+        <div>
+        <input type="checkbox" name="skill" value="html" id="html" />
+        <label for="html">HTML</label>
+        <br />
+        <input type="checkbox" name="skill" value="css" id="css" />
+        <label for="css">CSS</label>
+        <br />
+        <input type="checkbox" name="skill" value="js" id="javascript" />
+        <label for="javascript"> JAVASCRIPT</label>
+</div>
+         <p>select your gender:</p> <p>
+      <input type="radio" name="gender" value="male" id="male-radio" />
+      <label for="male-radio">Male</label>
+      <br />
+      <input type="radio" name="gender" value="female" id="female-radio" />
+      <label for="female-radio">Female</label>
+      <br />
+      <input type="radio" name="gender" value="other" id="other-radio" />
+      <label for="other-radio">Other</label>
+      <br /></p>
+
+       <label for="country">Select your Country: </label>
+      <select name="country" id="country">
+        <option value="india">India</option>
+        <option value="usa">USA</option>
+        <option value="uk">UK</option>
+        <option value="germany">Germany</option>
+      </select>
+<br>
+
+       <label for="bio"></label>
+    <textarea
+      name="bio"
+      id="bio"
+      placeholder="add your bio"
+      rows="15"
+      cols="100"
+    ></textarea>
+    <br>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+        <button type="button">button</button>
+    </form>
+
+</body>
+
+</html>

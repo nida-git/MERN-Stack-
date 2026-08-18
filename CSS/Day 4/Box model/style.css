@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    display: flex;
+    margin: 20px;
+}
+.nav ul{
+    display: flex;
+}
+.logo{
+    width: 400px;
+    font-family: cursive;
+}
+nav ul li{
+    list-style-type: none;
+    padding: 0px 20px;
+    margin: 0px 20px;
+}
+.hero-section{
+    width: 400px;
+    height: 200px ;
+    background-color: #E77B49;
+    margin-left: 500px;
+    padding: 30px;
+}
+.hero-btn {
+    padding: 10px 20px;
+    background-color: #E77B49;
+    margin: 60px;
+    
+}

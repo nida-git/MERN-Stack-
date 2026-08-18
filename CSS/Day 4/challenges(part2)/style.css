@@ -1,0 +1,47 @@
+.button{
+    padding: 10px 25px;
+    border: 2px solid brown;
+    border-radius: 8px;
+    margin: 10px;
+    background-color: aquamarine;
+}
+
+.card{
+    background-color: rgb(245, 149, 31);
+    width: 350px;
+    height: 400px;
+    padding: 25px;
+    border: 1px solid gray;
+    border-radius: 12px;
+    margin: 2% 30%;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    margin: 20px;
+}
+.box1{
+    border: 2px solid brown;
+}
+.box2{
+    border: 2px solid crimson;
+}
+.box3{
+    border: 2px solid black;
+}
+.pic{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 3px solid white;
+    background-color: aquamarine;
+}
+.badge{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+    padding: 2px;
+    margin: 10px 690px;
+}

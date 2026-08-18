@@ -1,0 +1,21 @@
+h1{
+    text-align: center;
+}
+.publish-date{
+    text-align: right;
+}
+article{
+    text-align: justify;
+}
+.hero-title{
+    text-align: center;
+}
+.hero-subtitle{
+    text-align: center;
+}
+nav a{
+    font-weight: 500;
+}
+nav a:hover{
+    font-weight: 700;
+}

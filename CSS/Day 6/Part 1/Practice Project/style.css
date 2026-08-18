@@ -1,0 +1,51 @@
+
+body{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+}
+
+.card-container{
+    width: 700px;
+    height: 600px;
+}
+
+.card{
+    background-color: azure;
+    border: 2px solid brown;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 15px 0;
+    box-shadow: 34px 25px 5px black ;
+    transition: transform 1s ease-in 0s;
+}
+
+
+
+.card h2{
+    color: #2e3e50;
+    margin-bottom: 10px;
+}
+
+.card .highlight{
+    background-color: #fff3cd;
+    padding: 5px 10px;
+    border: 1px solid blue;
+    border-radius: 3px;
+}
+
+.card button{
+    margin-top: 15px;
+}
+.card button:hover{
+    background-color: #59d65f;
+}
+
+img{
+    width: 300px;
+}
+.card:hover{
+    transform: scale(0.9)  rotate(-2deg);
+}

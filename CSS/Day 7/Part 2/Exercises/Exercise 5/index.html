@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 5</title>
+    <style>
+        .form-row{
+            display: flex;
+            height: 90px;
+            width: 90vw;
+            color: azure;
+            background-color: rgb(27, 26, 26);
+            align-items: center;
+        }
+        .label{
+            flex: 0 0 100px;
+        }
+        .input{
+            flex: 3 0.5 200px;
+        }
+        .btn{
+            flex: 0 0 100px;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Form layout</h1>
+    <div class="form-row">
+      <label class="label">Email:</label>
+      <input class="input" type="text" />
+      <button class="btn">Submit</button>
+    </div>
+  </body>
+</html>

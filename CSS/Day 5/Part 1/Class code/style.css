@@ -1,0 +1,32 @@
+body{
+    color: blue;
+    font-family: cursive;
+}
+h1{
+    color: red;
+}
+#parent{
+    color: brown;
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+}
+#child{
+    height: 100px;
+    width: 100px;
+    border: 2px solid red;
+}
+form{
+    background-color: blueviolet;
+}
+input , button{
+    background-color: inherit;
+}
+h1{
+    display: inline;
+}
+button{
+    visibility: hidden;
+    /* display: none; */
+}

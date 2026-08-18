@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.logo{
+    width: 80px;
+    height: 60px;
+}
+.nav{
+    display: flex;
+    background-color: rgb(22, 22, 22);
+    height: 60px;
+    width: 100vw; 
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul {
+    display: flex;
+    background-color: rgb(22, 22, 22);
+    height: 60px;
+    width: 700px;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+
+}
+nav ul li{
+    list-style-type: none;
+    font-size: 32px;
+    
+}
+.search{
+    height: 30px;
+    width: 400px;
+}
+button{
+    width: 100px;
+    height: 30px ;
+}
+.hero{
+    font-size: 70px;
+    height: 70vh;
+    width: 100vw;
+    padding: 30px;
+    background-color: rgb(46, 45, 45);
+    color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    border: 2px solid crimson;
+    width: 400px;
+    border-radius: 15px;
+    padding: 10px;
+}
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}

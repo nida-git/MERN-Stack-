@@ -1,0 +1,16 @@
+.card{
+    background-color: #1e1e2e;
+    color: rgb(255,255,255);
+}
+h2{
+    color: gold;
+    
+}
+.bio{
+    background-color: #2a2a3e;
+    color: rgb(200, 200, 200);
+}
+button{
+    background-color: rgb(79, 70, 229);
+    color: #ffffff;
+}

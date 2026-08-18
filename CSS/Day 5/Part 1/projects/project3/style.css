@@ -1,0 +1,22 @@
+nav ul li {
+    width: 50px;
+    height: 30px;
+    background-color: aqua;
+    border: 2px solid black;
+    margin: 2px;
+    display: block;
+}
+nav ul{
+    height: 40px;
+}
+.container{
+    padding: 30px;
+    border: 2px solid brown;
+    margin: 20px;
+    height: auto;
+}
+@media (min-width: 768px) {
+  nav ul li {
+    display: inline-block;
+   }
+}

@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 6</title>
+    <style>
+        .app-bar{
+            height: 100px;
+            width: 100vw;
+            display: flex;
+            background-color: rgb(58, 46, 46);
+            color: white;
+            align-items: center;
+            /* justify-content: center; */
+        }
+        .icon-btn{
+            flex: 0 0 50px;
+        }
+        .title{
+            flex: 1 0 200px;
+            align-self: flex-end;
+            height: 40px;
+            background-color: gray;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>App bar with dynamic spacing</h1>
+    <header class="app-bar">
+      <button class="icon-btn">☰</button>
+      <h1 class="title">My App Title</h1>
+      <button class="icon-btn">🔔</button>
+      <button class="icon-btn">👤</button>
+    </header>
+  </body>
+</html>

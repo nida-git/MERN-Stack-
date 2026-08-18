@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 4</title>
+    <style>
+        .pricing{
+            height: 90px;
+            width: 100vw;
+            display: flex;
+            background-color: blanchedalmond;
+            align-items: center;
+        }
+        .plan{
+            height: 50px;
+            /* flex-basis: 250px; */
+            border: 1px solid brown;
+            flex: 1 0 250px;
+        }
+        .popular{
+            flex: 1.5 0 250px;
+            align-self: flex-start;
+        }
+    </style>
+  </head>
+  <body>
+    <h1>Pricing table</h1>
+    <div class="pricing">
+      <div class="plan">Basic</div>
+      <div class="plan popular">Pro</div>
+      <div class="plan">Enterprise</div>
+    </div>
+  </body>
+</html>
