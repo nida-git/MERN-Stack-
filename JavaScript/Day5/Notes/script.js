@@ -178,4 +178,148 @@ for (let i = 1; i <= 4; i++) {
 
 // Inverted Triangle Pattern
 
-// for(let i=5 ; )
+
+for(let i=5 ; i>0; i--){
+  let pattern2 = ""
+  for(let j = 1 ; j<=i ; j++ ){
+  pattern2 += "*"
+  }
+  console.log(pattern2);
+}
+
+// While loop
+
+// 2: Sum Numbers Until value Reached
+
+let sum = 0;
+let num= 1;
+while(sum < 50){
+  sum += num;
+  console.log(`Added ${num} sum is now ${sum}`);
+  num++
+}
+
+// Password validation
+
+// let password = "VerySecret123"
+// let userInput = prompt("Enter your password")
+// let attempts = 0;
+// while ( userInput !== password){
+//   if (attempts < 5){
+//      console.log("Wrong password try again");
+//      userInput = prompt("Enter again: ")
+//      attempts++
+//   }else {
+//     console.log("you ran out of attempts");
+//     break;
+//   }
+// }
+
+// Finding First Power of 2 Greater Than Value
+
+let value = 1000;
+let exponent = 0;
+let ourValue = 0;
+while(ourValue < value){
+  ourValue = 2 ** exponent;
+  exponent++;
+}
+console.log(ourValue);
+console.log(`The first power of 2 greater than ${value} is ${exponent} `);
+
+
+// do while .. 
+// Dice Roll Until Six
+ 
+let roll = 0
+attempts = 1;
+do{
+  roll = Math.floor(Math.random()*6)+1
+  attempts++
+}while(roll !== 6)
+console.log(`You got 6 at ${attempts} attempts`);
+
+// counts atlest once
+ let count = 0
+ do{
+  count++
+ }while(count<0)
+console.log(count); // 1
+
+// ATM Withdrawal
+
+let balance = 1000; 
+let continueTransaction;
+
+// do{
+// let amount = Number(prompt(`balance is: ${balance} , Enter the amount to withdraw:`));
+
+// if(amount>0 && amount<=balance){
+//   balance -= amount;
+//   console.log(`withdrew amount : ${amount} , new balance: ${balance}`);
+// }else{
+//   console.log("Invalid amount");
+// }
+// continueTransaction = prompt("do you want to continue transaction (yes/no)?")
+// } while(continueTransaction === "yes" && balance > 0)
+//  console.log(`final balance ${balance}`);
+
+ // Break and continue
+
+ for (let i = 1; i <= 100; i++) {
+if (i % 7 === 0) {
+console.log(`First number divisible by 7: ${i}`);
+break; // Stop searching once found
+}
+}
+// Output: First number divisible by 7: 7
+
+// let correctPassword = "secret123";
+// let maxAttempts = 3;
+// for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+// let password = prompt(`Attempt ${attempt}: Enter password`);
+// if (password === correctPassword) {
+// console.log("Access granted!");
+// break; // Exit loop on successful login
+// } else if (attempt === maxAttempts) {
+// console.log("Access denied. No more attempts.");
+// } else {
+// console.log("Wrong password. Try again.");
+// }
+// } 
+
+for (let i = 0; i <= 5; i++) {
+if (i === 3) {
+continue; // Skip when i is 3
+}
+console.log(i);
+}
+// Output: 0, 1, 2, 4, 5 (3 is skipped)
+
+for (let i = 1; i <= 10; i++) {
+if (i % 2 !== 0) {
+continue; // Skip odd numbers
+}
+console.log(i);
+}
+// Output: 2, 4, 6, 8, 10
+
+let cities = ["London", "Paris", "Tokyo", "New York", "Sydney"];
+
+for(let  i=0 ; i<cities.length ; i++){
+  console.log(cities[i]);
+}
+// London
+// Paris
+// Tokyo
+// New York
+// Sydney
+
+//Calculate Sum of Numbers
+let scores = [85, 92, 78, 95, 88];
+
+let sum2 = 0
+for(let i = 0 ; i< scores.length ; i++){
+  sum2 = sum2 + scores[i];
+}
+console.log("Final sum is: ", sum2);
