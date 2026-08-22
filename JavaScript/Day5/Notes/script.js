@@ -323,3 +323,87 @@ for(let i = 0 ; i< scores.length ; i++){
   sum2 = sum2 + scores[i];
 }
 console.log("Final sum is: ", sum2);
+console.log("hello");
+
+// Iterationg over Arrays
+
+// Reverse Print an Array
+
+let colors = ["red", "green", "blue", "yellow"]
+console.log("original order");
+for(let i = 0; i<colors.length; i++ ){
+  console.log(colors[i]);
+}
+console.log("reverse order");
+for(let i = colors.length-1 ; i>0; i--){
+  console.log(colors[i]);
+}
+
+// Nested arrays
+
+let teams = [
+["Alice", "Bob"],
+["Charlie", "David"],
+["Eve", "Frank"]
+];
+
+for(let i=0; i<teams.length; i++){
+  for(let j=0; j<teams[i].length ; j++){
+    console.log(teams[i][j]);
+  }
+}
+
+// Matrix Addition
+
+let matrix1 = [[1, 2], [3, 4]];
+let matrix2 = [[5, 6], [7, 8]];
+let result = [];
+
+for(let i=0; i<matrix1.length; i++){
+  result[i]=[]
+  for(let j=0; j<matrix1[i].length; j++){
+    result[i][j] = matrix1[i][j]+matrix2[i][j]
+  }
+}
+console.log(result); //   [6, 8] [10, 12]
+
+// For of loop
+
+let colors2 = ["red", "green", "blue", "yellow"]
+
+for (let color of colors2){
+  console.log(color);
+}
+
+// Nested for...of with 2D Array
+
+let departments = [
+["Alice", "Bob", "Charlie"],
+["David", "Eve"],
+["Frank", "Grace", "Henry", "Ivy"]
+];
+
+for(let dept of departments){
+  for(let names of dept){
+    console.log(names);
+  }
+}
+
+// Word Scramble Game
+
+let words= ["javascript", "programming", "computer", "developer"]
+let word = words[Math.floor(Math.random()*words.length)];
+let scrambled = word.split("").sort(()=>Math.random()-0.5).join("");
+
+console.log(`Unsramble this word ${scrambled}`);
+
+let guess = ""
+while(guess !== word){
+  guess = prompt("Enter your answer").toLowerCase()
+
+  if (guess === word){
+    console.log("Correct");
+  }else {
+    console.log("try again");
+  }
+}
