@@ -214,3 +214,201 @@ for(let i = 1; i<=10 ; i++){
     }
     console.log(i)
 }
+
+/* Part E: Iterating Over Arrays (15 points)
+
+(Try this if didn't get, we will discuss this in class)
+Problem 13: Print Array Elements (3 points)
+Given the array below, use a for loop to print each city with its index.
+
+let cities = ["Mumbai", "Delhi", "Bangalore", "Chennai", "Kolkata"];
+// Write your code here
+
+Expected Output:
+0: Mumbai
+1: Delhi
+2: Bangalore
+3: Chennai
+4: Kolkata */
+
+let cities = ["Mumbai", "Delhi", "Bangalore", "Chennai", "Kolkata"];
+for(let i = 0; i<cities.length; i++){
+  console.log(`${i}: ${cities[i]}`);
+}
+
+/* Problem 14: Sum of Array (4 points)
+Given the array below, use a for loop to calculate and print the sum of all numbers.
+
+let numbers = [10, 25, 30, 45, 20];
+
+Expected Output:
+Sum: 130*/
+
+let numbers = [10, 25, 30, 45, 20];
+let total = 0;
+for(let i = 0; i<numbers.length; i++){
+  total += numbers[i]
+}
+console.log("Sum: ",total);
+
+/* Problem 15: Find Maximum in Array (4 points)
+
+Given the array below, use a for loop to find and print the largest number.
+
+let scores = [78, 92, 85, 99, 88, 76];
+
+Expected Output:
+Maximum score: 99*/
+
+let scores = [78, 92, 85, 99, 88, 76];
+let max = 0;
+
+for(let i=0; i<scores.length; i++){
+  if(scores[i]>max){
+    max = scores[i]
+  }
+}
+console.log(`Maximum score: ${max}`);
+
+/* Problem 16: Nested Array Iteration (4 points)
+Given the 2D array below, use nested for loops to print all player names.
+
+let teams = [
+["Alice", "Bob"],
+["Charlie", "David"],
+["Eve", "Frank"]
+];
+
+Expected Output:
+Alice
+Bob
+Charlie
+David
+Eve
+Frank */
+
+let teams = [
+["Alice", "Bob"],
+["Charlie", "David"],
+["Eve", "Frank"]
+];
+
+for(let i = 0; i<teams.length; i++){
+  for(let j = 0; j<teams[i]; j++){
+    console.log(teams[i][j]);
+    console.log(teams[i][j]);
+  }
+}
+
+console.log("hello");
+
+/* Problem 17: Basic for...of (3 points)
+Use a for...of loop to print each fruit from the array.
+
+let fruits = ["Apple", "Banana", "Orange", "Mango"];
+
+Expected Output:
+Apple
+Banana
+
+Orange
+Mango */
+
+let fruits = ["Apple", "Banana", "Orange", "Mango"];
+for (let fruit of fruits){
+  console.log(fruit);
+}
+
+/* Problem 18: for...of with String (3 points)
+Use a for...of loop to print each character of the string "LOOP" on a separate line.
+
+let word = "LOOP";
+
+Expected Output:
+L
+O
+O
+P*/
+
+let word = "LOOP";
+
+for(let letter of word){
+  console.log(letter);
+}
+
+/* Problem 19: Count Vowels with for...of (4 points)
+Use a for...of loop to count how many vowels (a, e, i, o, u) are in the sentence below. Print the
+count.
+
+let sentence = "JavaScript is awesome";
+// Hint: Use .toLowerCase() and check if character is in "aeiou"
+
+Expected Output:
+Number of vowels: 8 */
+
+let sentence = "JavaScript is awesome";
+let count = 0;
+for(let letter of sentence){
+  for(let vowel of "aeiou" ){
+    if(letter.toLowerCase() === vowel ){
+      count++
+    }
+
+  }
+}
+console.log(count);
+/* Part G: Challenge Problems (Bonus: 10 points)
+
+Problem 20: FizzBuzz (5 points)
+Write a for loop that prints numbers from 1 to 30. But:
+For multiples of 3, print "Fizz" instead of the number
+For multiples of 5, print "Buzz" instead of the number
+For multiples of both 3 and 5, print "FizzBuzz"
+Expected Output:
+
+1
+2
+Fizz
+4
+Buzz
+Fizz
+7
+8
+Fizz
+Buzz
+11
+Fizz
+13
+14
+FizzBuzz */
+
+for(let i = 1; i<=30 ; i++){
+  if(i%3=== 0 && i%5 === 0 ){
+    console.log(i, "Fizz Buzz");
+  }else if(i%3 === 0){
+    console.log(i,"Fizz");
+  }else if(i%5 === 0){
+    console.log(i, "Buzz");
+  }else{
+    console.log(i);
+  }
+}
+
+/* Problem 21: Reverse an Array (5 points)
+Given the array below, use a for loop to create a new array with elements in reverse order. Do NOT use
+built-in reverse methods.
+
+let original = [10, 20, 30, 40, 50];
+// Create a new array called 'reversed'
+
+Expected Output:
+Reversed array: [50, 40, 30, 20, 10]
+Hint: Loop backwards through the original array and push elements to the new array. */
+
+let original = [10, 20, 30, 40, 50];
+let newArray = []
+
+for (let i = original.length - 1 ; i>=0; i--){
+  newArray.push(original[i])
+}
+console.log(newArray);

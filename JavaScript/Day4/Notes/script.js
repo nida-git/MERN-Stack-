@@ -104,4 +104,46 @@ let items = ["first", "secong", "third", "fourth"]
 let lastIndex = items.length - 1;
 console.log(items[lastIndex]);// fourth
 
+//Basic slicing
+let numbers1 = [1, 2, 3, 4, 5];
+let sliced = numbers1.slice(1, 4);
+console.log(sliced); // [2, 3, 4]
 
+ // Using negative indices
+let letters = ["a", "b", "c", "d", "e"];
+console.log(letters.slice(-2)); // ["d", "e"] (last 2)
+
+// Splice 
+let colors1 = ["red", "green", "blue", "yellow", "purple"];
+// let removed = colors1.splice(1, 2);
+console.log("hello");
+colors1.splice(1,3)
+console.log(colors1);
+// console.log(removed); // ["green", "blue"]
+console.log(colors1); // ["red", "yellow", "purple"]
+
+// Inserting multiple elements without deletion
+let arr = [1, 5];
+arr.splice(1, 0, 2, 3, 4);
+console.log(arr); // [1, 2, 3, 4, 5]
+
+let arr2 = [4,2,8,9,5,34,57]
+arr2.splice(4,0,50,32,56)
+console.log(arr2);
+
+// Sorting 
+let fruits1 = ["banana", "apple", "mango", "cherry"];
+fruits1.sort();
+console.log(fruits1); 
+
+let scores = [85, 92, 78, 95, 88];
+scores.sort((a, b) => a - b);
+console.log(scores); // [78, 85, 88, 92, 95]
+
+scores.sort((a, b) => b - a);
+console.log(scores); // [78, 85, 88, 92, 95]
+
+// Basic join with default separator
+let colors = ["red", "green", "blue"];
+let result = colors.join();
+console.log(result); // "red,green,blue"
