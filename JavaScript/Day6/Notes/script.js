@@ -144,3 +144,68 @@ let posts = [
 console.log(posts[2].likes); // 53
 
 console.log(posts[0].content);// hello world
+
+// Math Objects 
+
+// math constants
+console.log(Math.PI);// 3.141592653589793
+console.log(Math.E);// 2.718281828459045
+
+// Absolute values
+console.log(Math.abs(-56));// 56
+
+// Power exponentiation
+
+console.log(3**5);// 243
+console.log(Math.pow(3,5)); //3^5 // output: 243
+console.log(Math.pow(10, 5));// 100000
+
+// Using math pi for calculation
+// Finding Area of circle
+let r = 5;
+let area = Math.PI * Math.pow(r,2);
+console.log(`The Area of circle with radius ${r} is : ${area}`);
+
+// Math.random
+
+console.log(Math.random()); // Generates random number
+
+// (between 0 and 10)
+let num = Math.random()*10
+console.log(num);
+
+// scaled to 100
+let num2 = Math.random() * 100
+console.log(num2);
+
+console.log(Math.random() * 5);// 0 to 5
+console.log(Math.random() * 50);// 0 to 50
+
+// 8. Generating Random Integers
+
+let step1 = Math.random()
+let step2 = step1 * 10
+let step3 = step2 + 1
+console.log(Math.floor(step3));
+
+// General Formula: Math.floor(Math.random() * (max - min + 1)) + min
+
+// 5 to 15
+console.log(Math.floor(Math.random() * 11) + 5);
+
+// 4 to 23
+console.log(Math.floor(Math.random() * 20) + 4);
+
+// 1 to 6
+console.log(Math.floor(Math.random() * 6) + 1);
+
+// Randon choice from array
+
+let colors = ["red", "green", "blue", "yellow"];
+let indx = Math.floor(Math.random() * colors.length);
+console.log(colors[indx]);
+
+// Random ID generator (1000-9999)
+
+let id = Math.floor(Math.random() * 9000) + 1000
+console.log(id);

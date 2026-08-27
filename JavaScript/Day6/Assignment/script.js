@@ -245,11 +245,120 @@ let courses = [
     name: "React",
     duration: 30,
     instructor: "Mike",
-  }
+  },
 ];
 console.log(courses[1].instructor); // Sarah
 console.log(courses[0].duration); // 40
-courses[2].duration = 32
+courses[2].duration = 32;
 console.log(courses[0].name); // JavaScript
 console.log(courses[1].name); // Python
 console.log(courses[2].name); // React
+
+/* Section 6: Math Object Basics
+Question 1: Use the Math object to:
+Print the value of Math.PI
+Calculate 2 to the power of 5 using Math.pow()
+Find the absolute value of -25
+Print all results with appropriate labels */
+
+let piValue = Math.PI;
+console.log(piValue); // 3.141592653589793
+
+console.log(Math.pow(2, 5)); // 32
+
+console.log(Math.abs(-25)); // 25
+
+/* Question 2: Use Math methods to:
+Round down 7.8 using Math.floor()
+Round up 7.2 using Math.ceil()
+Calculate 3 to the power of 4
+Find the absolute value of -100
+Print all results */
+
+console.log(Math.floor(7.8)); // 7
+console.log(Math.ceil(7.2)); // 8
+console.log(Math.pow(4, 3)); // 64
+console.log(Math.abs(-100)); // 100
+
+/* Section 7: Math.random() Basics
+Question 1: Generate and print:
+A random decimal number using Math.random()
+A random decimal between 0 and 10 (multiply by 10)
+A random decimal between 0 and 100 (multiply by 100)
+Run your code multiple times to see different values */
+
+let random_num = Math.random();
+
+let num_0to10 = Math.random() * 10;
+
+let num_0to100 = Math.random() * 100;
+
+console.log(random_num);
+console.log(num_0to10);
+console.log(num_0to100);
+
+/* Question 2: Create variables for:
+A random decimal (Math.random())
+That decimal multiplied by 5
+That decimal multiplied by 20
+Print all three values with labels */
+
+let random_num1 = Math.random();
+let random_num2 = random_num1 * 5;
+let random_num3 = random_num2 * 20;
+console.log(`random number is: ${random_num1}`);
+console.log(`random number after multipied by 5 is: ${random_num2}`);
+console.log(`After multipying by 20 : ${random_num3}`);
+
+/* Section 8: Generating Random Integers (1 to 10)
+Question 1: Generate a random integer from 1 to 10 step by step:
+Create a variable step1 with Math.random()
+Create a variable step2 by multiplying step1 by 10
+Create a variable step3 by using Math.floor() on step2
+Create a variable step4 by adding 1 to step3
+Print each step to understand the process */
+
+let step1 = Math.random();
+let step2 = step1 * 10;
+let step3 = Math.floor(step2);
+let step4 = step3 + 1;
+console.log("Step 1: ", step1);
+console.log("Step 2: ", step2);
+console.log("Step 3: ", step3);
+console.log("Step 4: ", step4);
+
+/* Question 2: Generate random integers using the one-line formula:
+Generate a random number from 1 to 10
+Generate another random number from 1 to 10
+Generate a third random number from 1 to 10
+Print all three to see they're different each time */
+let random_number1 = Math.floor(Math.random() * 10) + 1;
+let random_number2 = Math.floor(Math.random() * 10) + 1;
+let random_number3 = Math.floor(Math.random() * 10) + 1;
+
+console.log(random_number1);
+console.log(random_number2);
+console.log(random_number3);
+
+/*Section 9: Random Integers in Different Ranges
+Question 1: Generate and print:
+A random integer from 1 to 100
+A random integer from 1 to 6 (like a dice)
+A random integer from 1 to 5 (like a star rating)
+Label each output clearly */
+
+let num1 = Math.floor(Math.random() * 100) + 1;
+let num2 = Math.floor(Math.random() * 6) + 1;
+let num3 = Math.floor(Math.random() * 5) + 1;
+
+console.log(`The random number betwen 1 to 100 ${num1}`);
+console.log(`The random number betwen 1 to 6 ${num2}`);
+console.log(`The random number betwen 1 to 5 ${num3}`);
+
+
+/* Question 2: Generate random numbers for:
+A dice roll (1 to 6)
+A random day of the week (1 to 7)
+A random month (1 to 12)
+A random age between 18 and 25
+Print all values with descriptive labels */
