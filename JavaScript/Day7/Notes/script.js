@@ -101,3 +101,130 @@ let price = getData()
 let tax = price * 0.1;
 let totalPrice = price + tax
 console.log(totalPrice);
+
+// Return String
+
+function getGreeting(name){
+    return "Hello " + name
+}
+
+let mesage = getGreeting("Alice")
+console.log(mesage); // Hello Alice
+
+console.log(getGreeting("Bob")); // Hello Bob
+
+// Understanding Scope
+
+function showScore(){
+    let score = 88;
+    console.log(score); // Works
+}
+
+showScore()
+// console.log(score);// Error
+
+// Each funtion has own scopte
+
+function func1(){
+    let x = 10;
+    console.log(x);
+}
+
+function func2(){
+    let x = 20 
+    console.log(20);
+}
+
+func1()
+func2()
+
+// Block Scope
+
+// with if
+if(true){
+    let temp = "hello"
+    console.log(temp); // hello
+}
+// console.log(temp);// Cannot access
+
+// with loop
+
+for(let i = 1 ; i<5 ; i++){
+    console.log(i); // 1 2 3 4
+}
+// console.log(i);// Error
+
+// with curly braces
+
+{
+    let secret = "Hidden"
+    console.log(secret); // Hidden
+}
+// console.log(secret); // Error secret is not defined
+
+// Lexical scope
+
+function outerFunc(){
+    let x = 35;
+
+    function innerFunc(){
+        console.log(x);
+    }
+    innerFunc()
+}
+outerFunc()
+
+// Multi level nesting
+
+function level1(){
+    let x = 5;
+
+    function level2(){
+
+        let y = 10;
+
+        function level3(){
+
+            console.log(x);
+            console.log(y);
+        }
+
+        level3()
+    }
+
+    level2()
+}
+level1()
+
+// outer cannot acces inner function variables
+
+function outer(){
+    
+    function inner(){
+        let a = 29;
+    }
+    inner()
+    // console.log(a); // Error a is not defined
+}
+outer()
+
+// outer parameter in inner function
+
+function createMessage(name){
+    function greet(){
+        return "Hello "+ name
+    }
+    function farewell(){
+        return "Bye "+ name
+    }
+    console.log(greet());
+    console.log(farewell()); 
+}
+createMessage("john")
+
+// Function Expression
+
+const multiplication = function(a,b){
+    return a * b;
+}
+console.log(multiplication(2,4));

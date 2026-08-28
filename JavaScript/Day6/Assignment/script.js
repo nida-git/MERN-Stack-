@@ -355,10 +355,78 @@ console.log(`The random number betwen 1 to 100 ${num1}`);
 console.log(`The random number betwen 1 to 6 ${num2}`);
 console.log(`The random number betwen 1 to 5 ${num3}`);
 
-
 /* Question 2: Generate random numbers for:
 A dice roll (1 to 6)
 A random day of the week (1 to 7)
 A random month (1 to 12)
 A random age between 18 and 25
 Print all values with descriptive labels */
+
+let diceRoll = Math.floor(Math.random() * 6) + 1;
+console.log("dice number: ", diceRoll);
+
+let dayOfTheWeek = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+let indx = Math.floor(Math.random() * 7);
+console.log(dayOfTheWeek[indx]);
+
+let months = ["January", "february", "March",  "April", "May",  "June",  "July", "August", "September", "October",  "November", "December"]
+let randomIndx = Math.floor(Math.random()* 12)
+console.log(months[randomIndx]);
+
+
+let age = Math.floor(Math.random()* 6) + 18
+console.log("age between 18-25:",age);
+
+/* Section 14: Complex Challenge
+Question 1: Create a student database with array of objects:
+let students = [
+{ name: "Emma", math: 0, science: 0 },
+{ name: "Liam", math: 0, science: 0 },
+{ name: "Olivia", math: 0, science: 0 }
+];
+Then:
+Assign random math scores (60 to 100) to all students
+Assign random science scores (60 to 100) to all students
+Print all students with their scores*/
+
+let students2 = [
+{ name: "Emma", math: 0, science: 0 },
+{ name: "Liam", math: 0, science: 0 },
+{ name: "Olivia", math: 0, science: 0 }
+];
+
+students2[0].math = Math.floor(Math.random()* 41) + 60
+students2[0].science = Math.floor(Math.random()* 41) + 60
+
+students2[1].math = Math.floor(Math.random()* 41) + 60
+students2[1].science = Math.floor(Math.random()* 41) + 60
+
+students2[2].math = Math.floor(Math.random()* 41) + 60
+students2[2].science = Math.floor(Math.random()* 41) + 60
+
+console.log(students2);
+
+/* Question 2: Create a lottery system:
+Create an array tickets = []
+Generate and push 5 random ticket numbers (1000 to 9999) into the array
+Print all ticket numbers
+Generate one winning number (1000 to 9999) and print it */
+
+let tickets = []
+
+for(i = 0; i<5; i++){
+  let randm = Math.floor(Math.random()* 9000) + 1000
+  tickets.push(randm)
+}
+console.log(tickets);
+
+let winningindx = Math.floor(Math.random() * 5 )
+console.log("Winning lottery is:", tickets[winningindx]);
