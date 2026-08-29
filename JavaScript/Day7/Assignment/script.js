@@ -195,3 +195,40 @@ const celsiusToFahrenheit = function(celsius){
 }
 
 console.log(`${celsiusToFahrenheit(25)} Farenheit `); 
+
+/* Q1. Create a higher-order function called executeOperation that accepts two numbers and a function, then
+returns the result of calling that function with the two numbers. 
+const add = (a, b) => a + b;
+const multiply = (a, b) => a * b;
+console.log(executeOperation(5, 3, add)); // Should print: 8
+console.log(executeOperation(5, 3, multiply)); // Should print: 15
+*/
+
+
+function executeOperation(x,y,func){
+      return func(x,y)
+}
+
+const add = (a, b) => a + b;
+const multiply = (a, b) => a * b;
+
+console.log(executeOperation(5, 3, add)); // 8
+console.log(executeOperation(5, 3, multiply)); // 15
+
+/* Q2. Create a higher-order function called repeat that accepts a function and a number n, then calls that function
+n times.
+const sayHello = () => console.log("Hello!");
+repeat(sayHello, 4);
+// Should print:
+// Hello!
+// Hello!
+// Hello!
+// Hello! */
+
+function repeat(func,n){
+  for(let i = 0 ; i< n ; i++){
+    func()
+  }
+}
+const sayHello = () => console.log("Hello!");
+repeat(sayHello, 4);
