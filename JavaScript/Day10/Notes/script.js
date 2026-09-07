@@ -7,3 +7,7 @@ document.title = "New title"
 // console.log(document.all[6]);
 // document.all[6].onmouseover = document.all[6].innerText = "Hello world"
 
+// Selecting elements by id
+
+document.getElementById("main-heading").
+
