@@ -1,0 +1,13 @@
+.container{
+    width: 250px;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 12px;
+
+}
+
+.like-btn{
+    background-color: red;
+    border-radius: 8px;
+    padding: 10px;
+}
