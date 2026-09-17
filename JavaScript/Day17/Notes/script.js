@@ -17,35 +17,39 @@
 
 // Fetching Posts
 
-async function fetchPosts() {
-  const response = await fetch("https://dummyjson.com/posts");
-  const data = await response.json();
+// async function fetchPosts() {
+//   const response = await fetch("https://dummyjson.com/posts");
+//   const data = await response.json();
 
-  let container = document.createElement("div");
-  container.classList.add("container");
-
-  let title = document.createElement("h2");
-  title.innerText = data.posts[0].title;
-
-  let likeCount = document.createElement("button");
-  likeCount.classList.add("like-btn");
-  likeCount.innerText = `Likes: ${data.posts[0].reactions.likes}`;
-
-  let dislikeCount = document.createElement("button");
-  dislikeCount.classList.add("like-btn");
-  dislikeCount.innerText = `Dislikes: ${data.posts[0].reactions.dislikes}`;
-
-   let views = document.createElement("button");
-   views.innerText = `Views: ${data.posts[0].views}`
-
-  console.log(data.posts[0]);
-
-  let heading = document.querySelector("#main-heading");
-  heading.insertAdjacentElement("afterend", container);
-
-  container.insertAdjacentElement("beforeend", title);
-
-  title.insertAdjacentElement("afterend", dislikeCount);
-  title.insertAdjacentElement("afterend", likeCount);
-}
-fetchPosts();
+//   data.posts.forEach(element => {
+    
+    
+//     let container = document.createElement("div");
+//   container.classList.add("container");
+  
+//   let title = document.createElement("h2");
+//   title.innerText = element.title;
+  
+//   let likeCount = document.createElement("button");
+//   likeCount.classList.add("like-btn");
+//   likeCount.innerText = `Likes: ${element.reactions.likes}`;
+  
+//   let dislikeCount = document.createElement("button");
+//   dislikeCount.classList.add("like-btn");
+//   dislikeCount.innerText = `Dislikes: ${element.reactions.dislikes}`;
+  
+//   let views = document.createElement("button");
+//   views.innerText = `Views: ${element.views}`
+  
+//   console.log(element);
+  
+//   let heading = document.querySelector("#main-heading");
+//   heading.insertAdjacentElement("afterend", container);
+  
+//   container.insertAdjacentElement("beforeend", title);
+  
+//   title.insertAdjacentElement("afterend", dislikeCount);
+//   title.insertAdjacentElement("afterend", likeCount);
+// });
+// }
+// fetchPosts();
